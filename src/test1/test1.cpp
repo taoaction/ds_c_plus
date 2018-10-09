@@ -1,6 +1,8 @@
 #include <iostream>
 #include <memory>
-#include "../array_list/array_list.h"
+#include "../array/array.hpp"
+
+using namespace std;
 
 int main(int argc, char const *argv[])
 {
@@ -10,7 +12,7 @@ int main(int argc, char const *argv[])
 
     // ArrayList<int> *test = new ArrayList<int>(array_capacity);
 
-    ArrayList<int> test(array_capacity);
+    morris_container::Array<int> test(array_capacity);
     cout << test.capacity() << ", " << test.size() << endl;
 
     // ArrayList<int> arrayList(10);

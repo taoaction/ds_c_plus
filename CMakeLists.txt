@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.12)
 
 
-set(CMAKE_CXX_STANDARD 11)
+set(CMAKE_CXX_STANDARD 14)
 
 project(ds-c-plus)
 
@@ -16,11 +16,11 @@ project(ds-c-plus)
 
 file(GLOB_RECURSE TEST1_SOURCES
         ${CMAKE_CURRENT_SOURCE_DIR}/src/*.cpp
-        ${CMAKE_CURRENT_SOURCE_DIR}/src/*.h
-        ${CMAKE_CURRENT_SOURCE_DIR}/src/array_list/*.cpp
-        ${CMAKE_CURRENT_SOURCE_DIR}/src/array_list/*.h
+        ${CMAKE_CURRENT_SOURCE_DIR}/src/*.hpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/src/array/*.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/src/array/*.hpp
         ${CMAKE_CURRENT_SOURCE_DIR}/src/test1/*.cpp
-        ${CMAKE_CURRENT_SOURCE_DIR}/src/test1/*.h
+        ${CMAKE_CURRENT_SOURCE_DIR}/src/test1/*.hpp
         )
 
 list(SORT TEST1_SOURCES)
